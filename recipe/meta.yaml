@@ -18,7 +18,6 @@ requirements:
   run:
     - sphinxdft-data
     - iprpy-data
-    - gpaw-data
 
 test:
   commands:
