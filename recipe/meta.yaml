@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pyiron/pyiron-resources/archive/{{ version }}.tar.gz
-  sha256: 253d73b1368bf60d8cc1585551ee0b0b392e8f1e4ef1b02c0230608c8948066a
+  sha256: 288b9b2de77b424ff09d65169a6ca5694dcae132de2258cdc3218e0ba95c9fd4
 
 build:
   noarch: generic
