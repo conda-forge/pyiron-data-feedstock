@@ -1,5 +1,5 @@
 {% set name = "pyiron-data" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -11,13 +11,13 @@ source:
 
 build:
   noarch: generic
-  number: 1
+  number: 0
 
 requirements:
   build:
   run:
-    - sphinxdft-data
-    - iprpy-data
+    - sphinxdft-data >=0.0.1
+    - iprpy-data >=2020.11.20
 
 test:
   commands:
