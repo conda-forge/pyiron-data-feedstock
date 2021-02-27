@@ -1,5 +1,5 @@
 {% set name = "pyiron-data" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pyiron/pyiron-resources/archive/{{ version }}.tar.gz
-  sha256: 12a43328802268bf607b09bf493d5c5dfb17c8d18036c577162faf70f8f98408
+  sha256: fd0b1883efc174a6b478d9356bf56ebf204c73110eea20bd3384d57339e8f54f
 
 build:
   noarch: generic
@@ -17,7 +17,7 @@ requirements:
   build:
   run:
     - sphinxdft-data >=0.0.1
-    - iprpy-data >=2020.11.20
+    - iprpy-data >=2021.2.23
 
 test:
   commands:
