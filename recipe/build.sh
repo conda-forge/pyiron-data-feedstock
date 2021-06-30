@@ -10,3 +10,4 @@ cp -r randspg ${PREFIX}/share/pyiron
 cp -r pacemaker ${PREFIX}/share/pyiron
 cp -r sphinx ${PREFIX}/share/pyiron
 cp -r thermodynamics ${PREFIX}/share/pyiron
+cp -r damask ${PREFIX}/share/pyiron
