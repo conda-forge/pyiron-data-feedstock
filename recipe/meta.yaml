@@ -1,5 +1,5 @@
 {% set name = "pyiron-data" %}
-{% set version = "0.0.15" %}
+{% set version = "0.0.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pyiron/pyiron-resources/archive/{{ version }}.tar.gz
-  sha256: 2b64853f6cce53071523d00849fc1240e930ba0c006f14e7c0e61dcaed0f6bf3
+  sha256: 97fb96574eb71ce0493a46a01bf9133e8ed8f5917ba788517a9ceab2cbcbb13b
 
 build:
   noarch: generic
