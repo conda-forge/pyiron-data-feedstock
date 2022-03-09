@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: generic
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -47,7 +47,6 @@ test:
     - test -f ${PREFIX}/share/pyiron/randspg/bin/run_randspg_0.1.sh  # [unix]
     - test -f ${PREFIX}/share/pyiron/damask/bin/run_damask_3.0.0.sh  # [unix]
     - test -f ${PREFIX}/share/pyiron/damask/bin/run_damask_3.0.0_mpi.sh  # [unix]
-    - test -f ${PREFIX}/share/pyiron/templates/DemoScriptJob/script.py  # [unix]
 
 about:
   home: https://pyiron.org
