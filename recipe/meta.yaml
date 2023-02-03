@@ -1,5 +1,5 @@
 {% set name = "pyiron-data" %}
-{% set version = "0.0.20" %}
+{% set version = "0.0.21" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pyiron/pyiron-resources/archive/{{ version }}.tar.gz
-  sha256: 8b6f93d2140ae2d0d72acbb657c2c275f70124099fcb3be1a1d3e34dc6133bae
+  sha256: 4c7e6606e5da624d410e7a8bba8be0bf052b3e9fc5d0320ab8c56bcbd002a901
 
 build:
   noarch: generic
@@ -41,8 +41,9 @@ test:
     - test -f ${PREFIX}/share/pyiron/mlip/bin/run_mlipjob_1.0.0.sh  # [unix]
     - test -f ${PREFIX}/share/pyiron/mlip/bin/run_mlipjob_1.0.0_mpi.sh  # [unix]
     - test -f ${PREFIX}/share/pyiron/mlip/bin/run_mlipselect_1.0.0.sh  # [unix]
+    - test -f ${PREFIX}/share/pyiron/pacemaker/bin/run_pacemaker_tf.sh  # [unix]
+    - test -f ${PREFIX}/share/pyiron/pacemaker/bin/run_pacemaker_tf_cpu.sh  # [unix]
     - test -f ${PREFIX}/share/pyiron/runner/bin/run_runner_1.2.sh  # [unix]
-    - test -f ${PREFIX}/share/pyiron/pacemaker/bin/run_pacemakerjob_0.0.1.5.sh  # [unix]
     - test -f ${PREFIX}/share/pyiron/runner/bin/run_runner_1.2_mpi.sh  # [unix]
     - test -f ${PREFIX}/share/pyiron/randspg/bin/run_randspg_0.1.sh  # [unix]
     - test -f ${PREFIX}/share/pyiron/damask/bin/run_damask_3.0.0.sh  # [unix]
