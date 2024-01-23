@@ -1,5 +1,5 @@
 {% set name = "pyiron-data" %}
-{% set version = "0.0.27" %}
+{% set version = "0.0.28" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,6 @@ requirements:
 test:
   commands:
     - test -f ${PREFIX}/share/pyiron/atomicrex/bin/run_atomicrex_1.0.sh  # [unix]
-    - test -f ${PREFIX}/share/pyiron/atomistics/periodic_table.csv  # [unix]
     - test -f ${PREFIX}/share/pyiron/cp2k/bin/run_cp2k_8.2.0.sh  # [unix]
     - test -f ${PREFIX}/share/pyiron/damask/bin/run_damask_3.0.0.sh  # [unix]
     - test -f ${PREFIX}/share/pyiron/damask/bin/run_damask_3.0.0_mpi.sh  # [unix]
