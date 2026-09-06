@@ -3,7 +3,7 @@ About pyiron-data-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyiron-data-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pyiron.org
+Home: https://pyiron.org/
 
 Package license: BSD-3-Clause
 
@@ -11,14 +11,13 @@ Summary: pyiron - an integrated development environment (IDE) for computational 
 
 Development: https://github.com/pyiron
 
-Documentation: https://pyiron.readthedocs.io
+Documentation: https://pyiron.readthedocs.io/
 
 pyiron was initially developed in the Computational Materials Design department of Joerg Neugebauer at the
 Max Planck Insitut für Eisenforschung (Max Planck Insitute for iron research) as a framework for ab initio
 thermodynamics. In collaboration with the Interdisciplinary Centre for Advanced Materials Simulation (ICAMS)
 the framework was recently extended for high throughput applications resulting in the opensource release of
 pyiron.
-
 
 Current build status
 ====================
@@ -51,31 +50,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pyiron-data` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install pyiron-data
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install pyiron-data
 ```
 
-It is possible to list all of the versions of `pyiron-data` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add pyiron-data
+# for installing globally
+pixi global install pyiron-data
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `pyiron-data` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search pyiron-data --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search pyiron-data --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search pyiron-data --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -87,6 +128,8 @@ mamba repoquery whoneeds pyiron-data --channel conda-forge
 # List dependencies of `pyiron-data`:
 mamba repoquery depends pyiron-data --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
